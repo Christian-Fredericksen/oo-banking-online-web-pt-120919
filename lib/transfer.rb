@@ -5,9 +5,7 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @amount = amount
-    @status = "pending" if receiver.balance != receiver.balance + @amount 
-  else 
-    
+    @status = "pending" 
   end
   
   def valid?
